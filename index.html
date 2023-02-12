@@ -8,24 +8,22 @@
 </head>
 <body>
 <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+    <div class="topic">Enviar un Mensaje /<br> Escribir a el Email: <br>alejandrobonilla23@gmail.com</div>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Introduzca su nombre</label>
+        </div>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Introduzca su Email</label>
+        </div>
+        <div class="message-box">
+            <textarea></textarea>
+          <label>Introduzca su Mensaje</label>
+        </div>
+        <div class="input-box">
+          <input type="submit" value="Enviar Mensaje">
+        </div>
 </form>
 
 </body>
