@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo form netlify</title>
+    <title>Form netlify sms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form name="contact" method="POST" data-netlify="true">
-    <div class="topic">Enviar un Mensaje /<br> Escribir a el Email: <br>alejandrobonilla23@gmail.com</div>
-        <div class="input-box">
-          <input type="text" required>
-          <label>Introduzca su nombre</label>
-        </div>
-        <div class="input-box">
-          <input type="text" required>
-          <label>Introduzca su Email</label>
-        </div>
-        <div class="message-box">
-            <textarea></textarea>
-          <label>Introduzca su Mensaje</label>
-        </div>
-        <div class="input-box">
-         <button type="submit">Send</button>
-        </div>
-</form>
-
+    <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 </body>
 </html>
