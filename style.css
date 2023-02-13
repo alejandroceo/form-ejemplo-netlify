@@ -55,13 +55,13 @@ body::before{
   width: 40%;
   margin-right: 30px;
 }
-.content .input-box{
+.content .inputbox{
   height: 50px;
   width: 100%;
   margin: 16px 0;
   position: relative;
 }
-.content .input-box input{
+.content .inputbox input{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -73,12 +73,12 @@ body::before{
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
-.content .input-box input:focus,
-.content .input-box input:valid{
+.content .inputbox input:focus,
+.content .inputbox input:valid{
   border-color: #24c293;
   background-color: #fff;
 }
-.content .input-box label{
+.content .inputbox label{
   position: absolute;
   left: 18px;
   top: 50%;
@@ -88,19 +88,19 @@ body::before{
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
-.content .input-box input:focus ~ label,
-.content .input-box input:valid ~ label{
+.content .inputbox input:focus ~ label,
+.content .inputbox input:valid ~ label{
   top: 0;
   left: 12px;
   display: 14px;
   color: #24c286;
   background: #fff;
 }
-.content .message-box{
+.content .messagebox{
   min-height: 100px;
   position: relative;
 }
-.content .message-box textarea{
+.content .messagebox textarea{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -111,11 +111,11 @@ body::before{
   outline: none;
   transition all 0.3s ease;
 }
-.content .message-box textarea:focus{
+.content .messagebox textarea:focus{
   border-color: #24c266;
   background-color: #fff;
 }
-.content .message-box label{
+.content .messagebox label{
   position: absolute;
   font-size: 16px;
   color: #63726d;
@@ -124,14 +124,14 @@ body::before{
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.content .message-box textarea:focus ~ label{
+.content .messagebox textarea:focus ~ label{
   left: 12px;
   top: -10px;
   color: #24c273;
   font-size: 14px;
   background: #fff;
 }
-.content .input-box input[type="submit"]{
+.content .inputbox input[type="submit"]{
   color: #fff;
   background: #24c286;
   padding-left: 0;
@@ -141,7 +141,7 @@ body::before{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-.content .input-box input[type="submit"]:hover{
+.content .inputbox input[type="submit"]:hover{
   background-color: #3ddbb4;
 }
 @media (max-width:1000px) {
