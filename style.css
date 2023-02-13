@@ -21,14 +21,14 @@ body::before{
   width: 100%;
   left: 0;
   top: 0;
-  background: #24c26b;
+  background: #c22439;
   clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
 }
 .container{
   z-index: 12;
   max-width: 1050px;
   width: 100%;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 12px;
   margin: 0 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -49,19 +49,19 @@ body::before{
   text-align: center;
   font-size: 22px;
   font-weight: 500;
-  color: #24c29b;
+  color: #c27e24;
 }
 .content form{
   width: 40%;
   margin-right: 30px;
 }
-.content .inputbox{
+.content .input-box{
   height: 50px;
   width: 100%;
   margin: 16px 0;
   position: relative;
 }
-.content .inputbox input{
+.content .input-box input{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -69,71 +69,71 @@ body::before{
   font-size: 16px;
   outline: none;
   padding-left: 16px;
-  background: #e9fbf5;
+  background: #fbf2e9;
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
-.content .inputbox input:focus,
-.content .inputbox input:valid{
-  border-color: #24c293;
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #c28b24;
   background-color: #fff;
 }
-.content .inputbox label{
+.content .input-box label{
   position: absolute;
   left: 18px;
   top: 50%;
-  color: #63726a;
+  color: #726a63;
   font-size: 15px;
   pointer-events: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
-.content .inputbox input:focus ~ label,
-.content .inputbox input:valid ~ label{
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
   top: 0;
   left: 12px;
   display: 14px;
-  color: #24c286;
+  color: #c26324;
   background: #fff;
 }
-.content .messagebox{
+.content .message-box{
   min-height: 100px;
   position: relative;
 }
-.content .messagebox textarea{
+.content .message-box textarea{
   position: absolute;
   height: 100%;
   width: 100%;
   resize: none;
-  background: #e9f9fb;
+  background: #fbf2e9;
   border: 2px solid transparent;
   border-radius: 6px;
   outline: none;
   transition all 0.3s ease;
 }
-.content .messagebox textarea:focus{
-  border-color: #24c266;
+.content .message-box textarea:focus{
+  border-color: #c25624;
   background-color: #fff;
 }
-.content .messagebox label{
+.content .message-box label{
   position: absolute;
   font-size: 16px;
-  color: #63726d;
+  color: #726963;
   left: 18px;
   top: 6px;
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.content .messagebox textarea:focus ~ label{
+.content .message-box textarea:focus ~ label{
   left: 12px;
   top: -10px;
-  color: #24c273;
+  color: #c28324;
   font-size: 14px;
   background: #fff;
 }
-.content .inputbox input[type="submit"]{
+.content .input-box input[type="submit"]{
   color: #fff;
-  background: #24c286;
+  background: #c27e24;
   padding-left: 0;
   font-size: 18px;
   font-weight: 500;
@@ -141,8 +141,8 @@ body::before{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-.content .inputbox input[type="submit"]:hover{
-  background-color: #3ddbb4;
+.content .input-box input[type="submit"]:hover{
+  background-color: #db893d;
 }
 @media (max-width:1000px) {
   .content .image-box{
